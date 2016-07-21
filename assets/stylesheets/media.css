@@ -45,15 +45,40 @@
     .service-top-container h2 {
         padding: 40px 0 20px 0;
     }
-    /*.service-bottom-container > .col-sm-15 {
+/**************** our services list rearrange *****************/
+    .our-services-container {
+        height: auto;
+    }
+    .service-top-container {
+        position: static;
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .service-bottom-container {
+        display: inline-block;
+        position: static;
+        height: auto;
+        padding: 15px; 
+    }
+    .service-bottom-container > .col-sm-15 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: static;
+        padding: 10px;
         width: 100%;
     }
     .service-bottom-container > .col-sm-15 > img {
-        position: relative;
-        float: left;
-        top: 0;
-        left: 0;    
-    }*/
+        position: static;
+    }
+    .service-bottom-container > .col-sm-15 > p {
+        vertical-align: middle;
+        position: static;
+        text-align: left;
+    }
+
+/*********************************/
+
     .feedback-container h2 {
         padding: 20px 0 10px 0;
     }
