@@ -247,13 +247,10 @@ span.close-details {
     width: 60%;
 }
 .tab-pane-pics {
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: -15px;
+    margin-right: -15px;
     padding-top: 20px;
 }
-/*.tab-pane-pics img {
-
-}*/
 .tab-pane-pics > div:first-child {
     margin-left: 0;
 }
