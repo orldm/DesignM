@@ -1,0 +1,14 @@
+@font-face {
+  font-family: ParagraphFont;
+  src: url(assets/fonts/Ubuntu-R.woff);
+}
+
+@font-face {
+  font-family: Ubuntu-Medium;
+  src: url(assets/fonts/Ubuntu-M.woff);
+}
+
+@font-face {
+  font-family: Ubuntu-Bold;
+  src:  url(assets/fonts/Ubuntu-B.woff);
+}

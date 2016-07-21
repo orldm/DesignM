@@ -1,0 +1,376 @@
+.hidden {
+    visibility: hidden;
+}
+
+.color-line {
+    width: 100%;
+    height: 3px;
+    background-color: #AE3852;
+}
+
+p {
+    font-family: Ubuntu;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    color: #5F5C5D;
+}
+
+b {
+    font-family: Ubuntu;
+    font-weight: 700;
+}
+
+h2, h3 {
+    font-family: Ubuntu;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #5F5C5D;
+}
+
+h1 {
+    font-family: Ubuntu;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 0.4rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    letter-spacing: 0.15rem;
+}
+.header-menu {
+    z-index: 999999;
+    position: absolute;
+    width: 50%;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.top-link {
+    padding: 20px 0 0 0;
+}
+.header-menu a {
+    color: white;
+    font-family: Ubuntu;
+    font-size: 0.75rem;
+}
+.main-title {
+    z-index: 999999;
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.main-title p {
+    color: white;
+    padding-top: 40px;
+}
+.carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    margin: 4px;
+}
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 4px;
+    background-color: #AE3852;
+    border-color: #AE3852;
+}
+/************************* about us ************************/
+.photo-container {
+    padding: 80px 50px 50px 0;
+}
+.photo-container h3 {
+    padding: 15px 0 8px 0;
+    font-size: 0.9rem;
+}
+.about-container {
+    padding: 50px 100px 50px 40px;
+}
+.about-container h2 {
+    padding-bottom: 20px;
+}
+.about-container p {
+    padding: 10px 0;
+}
+/************************* our works ************************/
+.our-works-container {
+    padding-bottom: 60px;
+    background-color: #262223;
+}
+.our-works-container h2 {
+    padding: 30px 0;
+    color: #E4E3E3;
+}
+.gallery-container {
+    overflow: hidden;
+    display: inline;
+}
+.gallery-img-col {
+    padding: 0;
+    overflow: hidden;
+}
+.gallery-img-col img {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+        transition: all 0.2s;
+}
+
+.gallery-img-col:hover > img {
+    -webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+    filter: blur(4px);
+}
+
+.gallery-img-col:hover > .details-overlay {
+    opacity: 1.0;
+}
+
+.details-overlay {
+    color: white;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 999999;
+    pointer-events: none;
+    opacity: 0;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.details-overlay h3 {
+    padding-top: 40%;
+    color: white;
+    text-transform: none;
+    font-family: Ubuntu;
+    font-size: 1.3rem;
+}
+.details-overlay button {
+    margin: 20px 0;
+    padding: 6px 30px;
+    font-family: Ubuntu;
+    font-size: 0.9rem;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    pointer-events: auto;
+}
+.details-overlay button:hover,  .details-overlay button:focus{
+    color: white;
+}
+/*.details-overlay button:hover:disabled {
+    cursor: auto;
+}*/
+.arrow-up {
+    position:absolute;
+    width: 0; 
+    height: 0; 
+    left: 50%;
+    bottom: -5px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #262223;
+}
+.line-divider {
+    border-right: 1px solid white;
+}
+.height-adjust {
+    padding-right: 4px;
+}
+.img-scale-up {
+    width: 100%;
+}
+/************************* our-works - details ************************/
+.details-container {
+    width: 100%;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: relative;
+    padding: 0 80px 0 80px;
+
+-webkit-transition: all .3s;
+-moz-transition: all .3s;
+-o-transition: all .3s;
+-ms-transition: all .3s;
+transition: all .3s;
+}
+span.project-details {
+    /*position: absolute;
+    top: 19px;*/
+    margin-left: 10px;
+    background-color: #AE3852;
+    color: white;
+    font-family: Ubuntu;
+    font-size: 0.7rem;
+    padding: 4px 15px;
+    border-radius: 4px;
+    text-transform: none;
+    letter-spacing: 1px;
+}
+    
+.details-container h2 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.details-container p {
+    color: #E4E3E3; 
+}
+span.close-details {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 1.6rem;
+    color: #E4E3E3;
+    cursor: pointer;
+}
+.tab-pane-text {
+    width: 60%;
+}
+.tab-pane-pics {
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-top: 20px;
+}
+/*.tab-pane-pics img {
+
+}*/
+.tab-pane-pics > div:first-child {
+    margin-left: 0;
+}
+.nav li:first-child {
+    margin-left: 0;
+}
+.nav-pills {
+    padding-bottom: 10px;
+}
+.nav-pills>li {
+    margin: 0 10px;
+    padding: 10px 0;
+    font-family: Ubuntu;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+.nav-pills>li>a {
+    border-radius: 0;
+    padding: 0 0 5px 0;
+    letter-spacing: 0.08rem;
+}
+.nav-pills>li>a, .nav-pills>li>a:focus, .nav-pills>li>a:hover {
+    background-color: transparent;
+    color: #666666;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    background-color: transparent;
+    color: white;
+    border-bottom: 1px solid white;
+}
+/************************* our services ************************/
+.our-services-container {
+    position: relative;
+    height: 490px;
+    top: 0;
+    left: 0;
+}
+.img-icon {
+    position: absolute;
+    top: -45px;
+    left: calc(50% - 45px);
+}
+.service-top-container {
+    position: absolute;
+    top: 0;
+    height: 50%;
+}
+.service-top-container h2 {
+    padding: 65px 0 20px 0;
+}
+.service-bottom-container {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 50%;
+    padding: 0 60px;
+    background-color: #F6F6F6;
+}
+.service-bottom-container p {
+    position: absolute;
+    top: 60px;
+    padding: 0 15px;
+}
+/************************* let's hear you ************************/
+.feedback-container {
+    background-color: #AE3852;
+}
+.feedback-container h2, .feedback-container p {
+    color: white;
+}
+.container-inner {
+    width: 50%;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.container-inner-wide {
+    width: 70%;
+}
+.feedback-container h2 {
+    padding: 40px 0 20px 0;
+}
+.feedback-container button {
+    margin: 20px 0 40px 0;
+    padding: 8px 30px;
+    font-family: Ubuntu;
+    font-size: 0.95rem;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+.feedback-container button:hover, .feedback-container button:focus {
+    color: white;
+}
+/************************* testimonials ************************/
+.testimonials-container h2 {
+    padding-bottom: 20px;
+    color: #AE3852;
+}
+.testimonials-container p {
+    padding-bottom: 20px;
+}
+.testimonials-container img {
+    padding: 40px 0 30px 0;
+}
+/************************* contact us ************************/
+.contacts-container {
+    background-color: #F6F6F6;
+}
+.contacts-container h2 {
+    padding: 30px 0;
+}
+.contact-column {
+    padding: 20px 15px 40px 15px;
+}
+.contact-column p {
+    padding-top: 15px;
+}
+/************************* footer ************************/
+.footer-info img {
+    padding: 30px 0;
+}
+.footer-info small {
+    font-size: 0.7rem;
+}
+.social-container img {
+    padding: 20px 10px;
+}

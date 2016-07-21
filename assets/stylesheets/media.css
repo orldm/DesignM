@@ -1,0 +1,116 @@
+@media only screen and (max-width : 992px) {
+    h1 {
+        font-size: 2.6rem;
+    }
+    .main-title {
+        top: 40%;
+        width: 70%;
+    }
+    .header-menu {
+        width: 60%;
+    }
+    .header-menu a {
+        font-size: 0.7rem;
+    }
+    .photo-container {
+        padding: 30px 20px 0 20px;
+    }
+    .about-container {
+        padding: 20px 40px;
+    }
+    .about-container h2 {
+        padding-bottom: 0;
+    }
+    .service-bottom-container p {
+        top: 50px;
+        padding: 0 10px;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .header-menu {
+        top: 10px;
+        width: 70%;
+    }
+    .main-title p {
+        padding-top: 20px;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+    .service-top-container h2 {
+        padding: 40px 0 20px 0;
+    }
+    /*.service-bottom-container > .col-sm-15 {
+        width: 100%;
+    }
+    .service-bottom-container > .col-sm-15 > img {
+        position: relative;
+        float: left;
+        top: 0;
+        left: 0;    
+    }*/
+    .feedback-container h2 {
+        padding: 20px 0 10px 0;
+    }
+    .feedback-container button {
+        margin: 20px 0 20px 0;
+        padding: 6px 30px;
+        font-size: 0.9rem;
+    }
+    .container-inner {
+        width: 70%;
+    }
+    .testimonials-container img {
+        padding: 20px 0;
+    }
+    .testimonials-container p {
+        padding-bottom: 10px;
+    }
+    .contacts-container h2 {
+        padding: 20px 0;
+    }
+    .contact-column {
+        padding: 10px 15px;
+    }
+    .details-overlay button {
+        margin: 10px 0;
+        padding: 3px 20px;
+        font-size: 0.6rem;
+    }
+    .details-overlay h3 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    h1 {
+        font-size: 1.6rem;
+        letter-spacing: 0.2rem;
+    }
+    .header-menu {
+        top: 3px;
+        width: 90%;
+    }
+    .main-title {
+        top: 30%;
+    }
+    .main-title p {
+        padding-top: 10px;
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+    .details-overlay button {
+        margin: 10px 0;
+        padding: 1px 10px;
+        font-size: 0.6rem;
+    }
+    .details-overlay h3 {
+        font-size: 0.7rem;
+    }
+
+}
