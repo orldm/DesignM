@@ -29,6 +29,12 @@
     }
 }
 
+@media only screen and (min-width: 768px) {
+    .modal-dialog {
+        width: 368px;
+    }
+}
+
 @media only screen and (max-width : 768px) {
     h1 {
         font-size: 2rem;

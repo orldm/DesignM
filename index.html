@@ -237,7 +237,7 @@
         <div class="container-inner container-inner-narrow">
             <h2>LET'S HEAR YOU!</h2>
             <p>Ready to take it a step further? Let’s start talking about your project or idea and find out how we can help you</p>
-            <button class="btn btn-feedback">GET A QUOTATION</button>
+            <button class="btn btn-feedback" data-toggle="modal" data-target="#myModal">GET A QUOTATION</button>
         </div>
     </div>
     <div class="row no-margin testimonials-container">
@@ -279,5 +279,37 @@
             <img src="./assets/images/linkedin-logo.png" class="social-icon" alt="linkedin">
         </div>
     </div>
+
+    <!--modal popup-->
+
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <button type="button" class="close" data-dismiss="modal">&#x2715;</button>
+                    <h2 class="modal-title">GET A QUOTATION!</h2>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <p>Name</p>
+                        <input type="text" name="name">
+                        <p>E-mail</p>
+                        <input type="email" name="email">
+                        <p>Your project idea</p>
+                        <textarea rows="5" name="comment" form="usrform"></textarea>
+                        <p>Upload file</p>
+                        <div class="upload-area">
+                            <img src="./assets/images/icon-upload.png" alt="drop file here">
+                        </div>
+                        <button class="btn btn-send">SEND</button>
+                    </form>
+                </div>
+                <!--<div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
