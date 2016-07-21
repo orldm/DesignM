@@ -17,7 +17,8 @@
 
 p {
     font-family: Ubuntu;
-    font-size: 0.9rem;
+    font-size: 0.87rem;
+    letter-spacing: 0.01rem;
     line-height: 1.5rem;
     color: #5F5C5D;
 }
@@ -31,7 +32,7 @@ h2, h3 {
     font-family: Ubuntu;
     font-weight: 700;
     text-transform: uppercase;
-    color: #5F5C5D;
+    color: #555555;
 }
 
 h1 {
@@ -44,8 +45,8 @@ h1 {
 }
 
 h2 {
-    font-size: 1.2rem;
-    letter-spacing: 0.15rem;
+    font-size: 1.25rem;
+    letter-spacing: 0.1rem;
 }
 .header-menu {
     z-index: 999999;
@@ -62,7 +63,9 @@ h2 {
 .header-menu a {
     color: white;
     font-family: Ubuntu;
-    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    font-size: 0.74rem;
 }
 .main-title {
     z-index: 999999;
@@ -76,29 +79,30 @@ h2 {
 .main-title p {
     color: white;
     padding-top: 40px;
+    font-size: 1rem;
 }
 .carousel-indicators li {
-    width: 12px;
-    height: 12px;
-    margin: 4px;
+    width: 14px;
+    height: 14px;
+    margin: 6px;
 }
 .carousel-indicators .active {
-    width: 12px;
-    height: 12px;
-    margin: 4px;
+    width: 14px;
+    height: 14px;
+    margin: 6px;
     background-color: #AE3852;
     border-color: #AE3852;
 }
 /************************* about us ************************/
 .photo-container {
-    padding: 80px 50px 50px 0;
+    padding: 80px 100px 50px 0;
 }
 .photo-container h3 {
     padding: 15px 0 8px 0;
     font-size: 0.9rem;
 }
 .about-container {
-    padding: 50px 100px 50px 40px;
+    padding: 50px 100px 50px 20px;
 }
 .about-container h2 {
     padding-bottom: 20px;
@@ -162,7 +166,9 @@ h2 {
     color: white;
     text-transform: none;
     font-family: Ubuntu;
+    font-weight: 500;
     font-size: 1.3rem;
+    letter-spacing: 0.05rem;
 }
 .details-overlay button {
     margin: 20px 0;
@@ -215,25 +221,31 @@ h2 {
 transition: all .3s;
 }
 span.project-details {
-    /*position: absolute;
-    top: 19px;*/
-    margin-left: 10px;
+    position: relative;
+    top: -3px;
+    /*margin-left: 15px;*/
     background-color: #AE3852;
     color: white;
     font-family: Ubuntu;
     font-size: 0.7rem;
-    padding: 4px 15px;
+    padding: 4px 10px;
     border-radius: 4px;
     text-transform: none;
-    letter-spacing: 1px;
+    letter-spacing: 0.05rem;
 }
     
 .details-container h2 {
+    font-weight: 500;
+    font-size: 1.3rem;
+    letter-spacing: 0.05rem;
     padding-top: 20px;
     padding-bottom: 10px;
 }
 .details-container p {
-    color: #E4E3E3; 
+    color: #BBBBBB;
+    font-size: 0.86rem;
+    letter-spacing: 0rem;
+    line-height: 1.4rem;
 }
 span.close-details {
     position: absolute;
@@ -261,20 +273,20 @@ span.close-details {
     padding-bottom: 10px;
 }
 .nav-pills>li {
-    margin: 0 10px;
+    margin: 0 20px;
     padding: 10px 0;
     font-family: Ubuntu;
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.04rem;
 }
 .nav-pills>li>a {
     border-radius: 0;
     padding: 0 0 5px 0;
-    letter-spacing: 0.08rem;
 }
 .nav-pills>li>a, .nav-pills>li>a:focus, .nav-pills>li>a:hover {
     background-color: transparent;
-    color: #666666;
+    color: #BBBBBB;
 }
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
     background-color: transparent;
@@ -287,6 +299,10 @@ span.close-details {
     height: 490px;
     top: 0;
     left: 0;
+}
+.service-top-container p {
+    font-size: 0.95rem;
+    color: #444444;
 }
 .img-icon {
     position: absolute;
@@ -313,6 +329,7 @@ span.close-details {
     position: absolute;
     top: 60px;
     padding: 0 15px;
+    color: #666666;
 }
 /************************* let's hear you ************************/
 .feedback-container {
@@ -325,6 +342,9 @@ span.close-details {
     width: 50%;
     display: inline-block;
     padding-bottom: 10px;
+}
+.container-inner-narrow {
+    width: 36%;
 }
 .container-inner-wide {
     width: 70%;
@@ -354,6 +374,10 @@ span.close-details {
 }
 .testimonials-container img {
     padding: 40px 0 30px 0;
+}
+.testimonials-container b {
+    font-size: 0.95rem;
+    color: #555555;
 }
 /************************* contact us ************************/
 .contacts-container {
