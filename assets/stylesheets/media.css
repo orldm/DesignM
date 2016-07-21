@@ -34,6 +34,7 @@
         font-size: 2rem;
     }
     .header-menu {
+        top: 10px;
         width: 70%;
     }
     .main-title p {

@@ -40,19 +40,19 @@ h1 {
     font-weight: 500;
     text-transform: uppercase;
     color: white;
-    font-size: 3rem;
+    font-size: 3.2rem;
     letter-spacing: 0.4rem;
 }
 
 h2 {
     font-size: 1.25rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.15rem;
 }
 .header-menu {
     z-index: 999999;
     position: absolute;
     width: 50%;
-    top: 10px;
+    top: 25px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -79,7 +79,7 @@ h2 {
 .main-title p {
     color: white;
     padding-top: 40px;
-    font-size: 1rem;
+    font-size: 0.98rem;
 }
 .carousel-indicators li {
     width: 14px;
@@ -95,14 +95,14 @@ h2 {
 }
 /************************* about us ************************/
 .photo-container {
-    padding: 80px 100px 50px 0;
+    padding: 80px 110px 50px 0;
 }
 .photo-container h3 {
     padding: 15px 0 8px 0;
     font-size: 0.9rem;
 }
 .about-container {
-    padding: 50px 100px 50px 20px;
+    padding: 56px 100px 50px 0;
 }
 .about-container h2 {
     padding-bottom: 20px;
@@ -238,7 +238,7 @@ span.project-details {
     font-weight: 500;
     font-size: 1.3rem;
     letter-spacing: 0.05rem;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 10px;
 }
 .details-container p {
@@ -315,7 +315,7 @@ span.close-details {
     height: 50%;
 }
 .service-top-container h2 {
-    padding: 65px 0 20px 0;
+    padding: 60px 0 20px 0;
 }
 .service-bottom-container {
     position: absolute;
@@ -365,6 +365,9 @@ span.close-details {
     color: white;
 }
 /************************* testimonials ************************/
+.testimonials-container {
+    padding-bottom: 10px;
+}
 .testimonials-container h2 {
     padding-bottom: 20px;
     color: #AE3852;
@@ -384,7 +387,7 @@ span.close-details {
     background-color: #F6F6F6;
 }
 .contacts-container h2 {
-    padding: 30px 0;
+    padding: 35px 0 25px 0;
 }
 .contact-column {
     padding: 20px 15px 40px 15px;
@@ -400,5 +403,5 @@ span.close-details {
     font-size: 0.7rem;
 }
 .social-container img {
-    padding: 20px 10px;
+    padding: 20px 10px 60px 10px;
 }
