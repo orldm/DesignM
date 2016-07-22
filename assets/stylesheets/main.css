@@ -102,7 +102,7 @@ h2 {
     font-size: 0.9rem;
 }
 .about-container {
-    padding: 56px 100px 50px 0;
+    padding: 56px 100px 50px 10px;
 }
 .about-container h2 {
     padding-bottom: 20px;
@@ -121,18 +121,19 @@ h2 {
 }
 .gallery-container {
     overflow: hidden;
-    display: inline;
+    display: inline-flex;
+    flex-wrap: wrap;
 }
 .gallery-img-col {
     padding: 0;
     overflow: hidden;
 }
 .gallery-img-col img {
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-        transition: all 0.2s;
+    -webkit-transition: blur 0.2s;
+    -moz-transition: blur 0.2s;
+    -o-transition: blur 0.2s;
+    -ms-transition: blur 0.2s;
+        transition: blur 0.2s;
 }
 
 .gallery-img-col:hover > img {
@@ -183,9 +184,6 @@ h2 {
 .details-overlay button:hover,  .details-overlay button:focus{
     color: white;
 }
-/*.details-overlay button:hover:disabled {
-    cursor: auto;
-}*/
 .arrow-up {
     position:absolute;
     width: 0; 
@@ -207,6 +205,7 @@ h2 {
 }
 /************************* our-works - details ************************/
 .details-container {
+    order: 99;
     width: 100%;
     max-height: 0;
     opacity: 0;

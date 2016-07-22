@@ -9,7 +9,7 @@ $(document).ready(function() {
     $('.js-details').click(function() {
         if (!($(this).hasClass('current'))) {
             $(this).addClass('current');
-            $('.details-container').css('max-height', '500px').css('opacity', '1');
+            $('.details-container').css('max-height', '9999px').css('opacity', '1');
             $('.arrow-up').removeClass('hidden').animate({
                 bottom:'+=5'
             }, 100);
