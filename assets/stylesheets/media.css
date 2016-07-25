@@ -40,12 +40,20 @@
         font-size: 2rem;
     }
     .navbar-wrapper {
+        top: 0;
         justify-content: flex-end;
+    }
+    button.navbar-toggle {
+        z-index: 999999;
+        position: fixed;
+        right: 0;
     }
     .navbar {
         width: 100%;
     }
     .navbar .navbar-collapse {
+        position: fixed;
+        width: 100%;
         background-color: rgba(0, 0, 0, 0.8);
     }
     .navbar .navbar-collapse>ul {
@@ -57,7 +65,7 @@
         font-size: 1.5rem;
     }
     .nav>li.logo-placeholder {
-        display: none;
+        display: none!important;
     }
     .header-menu {
         top: 10px;
