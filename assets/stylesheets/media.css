@@ -96,6 +96,7 @@
     }
     .service-bottom-container > .col-sm-15 > img {
         position: static;
+        min-width: 89px;
     }
     .service-bottom-container > .col-sm-15 > p {
         vertical-align: middle;
