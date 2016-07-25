@@ -343,6 +343,7 @@ span.close-details {
 .nav-pills>li>a {
     border-radius: 0;
     padding: 0 0 5px 0;
+    display: inline;
 }
 .nav-pills>li>a, .nav-pills>li>a:focus, .nav-pills>li>a:hover {
     background-color: transparent;
