@@ -39,6 +39,26 @@
     h1 {
         font-size: 2rem;
     }
+    .navbar-wrapper {
+        justify-content: flex-end;
+    }
+    .navbar {
+        width: 100%;
+    }
+    .navbar .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .navbar .navbar-collapse>ul {
+        padding-bottom: 50px;
+    }
+    .navbar-inverse .navbar-nav>li>a {
+        font-weight: 500;
+        letter-spacing: 0.4rem;
+        font-size: 1.5rem;
+    }
+    .nav>li.logo-placeholder {
+        display: none;
+    }
     .header-menu {
         top: 10px;
         width: 70%;
@@ -120,23 +140,36 @@
 
 @media only screen and (max-width : 600px) {
     h1 {
-        font-size: 1.6rem;
-        letter-spacing: 0.2rem;
+        font-size: 2.2rem;
+        line-height: 2.5rem;
+        /*letter-spacing: 0.6rem;*/
     }
     h2 {
         font-size: 1.6rem;
+    }
+    .top-logo {
+        top: 10%;
     }
     .header-menu {
         top: 3px;
         width: 90%;
     }
     .main-title {
-        top: 30%;
+        top: 40%;
+        width: 90%;
     }
     .main-title p {
-        padding-top: 10px;
+        padding-top: 20px;
         font-size: 0.8rem;
-        line-height: 1rem;
+        line-height: 1.2rem;
+    }
+    .carousel-control {
+        display: none;
+    }
+    .carousel-inner>.item>img {
+        height: 120vw;
+        width: auto;
+        max-width: none;
     }
     .photo-container {
         display: none;

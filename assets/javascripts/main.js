@@ -1,10 +1,19 @@
 $(document).ready(function() {
     $('.js-anchor').click(function(e) {
         e.preventDefault();
-        // console.log($.attr(this, 'href'));
         $('html, body').animate({
             scrollTop: $( $(this).attr('href') ).offset().top
         }, 500);
+    });
+    $('.navbar-toggle').click(function(e) {
+        if ($(this).parent().hasClass('background-dark')) {
+            var that = this;
+            setTimeout(function() {
+                $(that).parent().removeClass('background-dark');
+            }, 340);
+        } else {
+            $(this).parent().addClass('background-dark');
+        }
     });
     $('.js-details').click(function() {
         if (!($(this).hasClass('current'))) {
