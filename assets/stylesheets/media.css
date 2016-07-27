@@ -43,6 +43,12 @@
         top: 0;
         justify-content: flex-end;
     }
+    .language-panel {
+        display: none;
+    }
+    .language-panel-mobile {
+        display: block;
+    }
     button.navbar-toggle {
         z-index: 999999;
         position: fixed;
@@ -54,15 +60,25 @@
     .navbar .navbar-collapse {
         position: fixed;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: #262223;
     }
+    /*.background-dark {
+        background-color: #262223;
+    }*/
     .navbar .navbar-collapse>ul {
-        padding-bottom: 50px;
+        /*padding-bottom: 50px;*/
+        padding-top: 100px !important;
+        height: 100vh !important;
     }
     .navbar-inverse .navbar-nav>li>a {
         font-weight: 500;
-        letter-spacing: 0.4rem;
-        font-size: 1.5rem;
+        /*letter-spacing: 0.4rem;*/
+        font-size: 1rem;
+        line-height: 35px;
+        /*padding-top: 40px;*/
+        /*padding-bottom: 40px;*/
+        /*height: 26vh !important;*/
+        overflow: visible !important;
     }
     .nav>li.logo-placeholder {
         display: none!important;
@@ -92,7 +108,8 @@
         display: inline-block;
         position: static;
         height: auto;
-        padding: 15px; 
+        padding: 15px;
+        background-color: white;
     }
     .service-bottom-container > .col-sm-15 {
         display: flex;
@@ -221,10 +238,17 @@
     .tab-pane-text {
         width: 100%;
     }
+    .tab-pane-pics {
+        /*display: flex;
+        flex-wrap: nowrap;*/
+        overflow: hidden;
+        width: 500%;
+    }
     .tab-pane-pics .col-xs-3 {
-        width: 100%;
+        width: auto;
     }
     .tab-pane-pics img {
+        width: 100%;
         padding: 20px 0;
     }
     .service-bottom-container {

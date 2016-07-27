@@ -60,6 +60,48 @@ h2 {
     left: calc(50% - 35px);
     z-index: 999;
 }
+#logo-small {
+    opacity: 0;
+}
+.language-panel {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    z-index: 99999
+}
+.language-panel button {
+    padding: 2px;
+    font-family: Ubuntu;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: white;
+    border: 1px solid;
+    border-color: transparent;
+    background: none;
+}
+
+.language-panel-mobile {
+    padding-top: 40px;
+    display: none;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+}
+.language-panel-mobile button {
+    padding: 6px;
+    font-family: Ubuntu;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+    border: 1px solid;
+    border-color: transparent;
+    background: none;
+}
+
+button.selected {
+    border-color: white;
+}
+
+
 .navbar-fixed {
     position: fixed!important;
     top: 0!important;
@@ -71,7 +113,7 @@ h2 {
     padding: 15px 35px !important;
 }
 .navbar-wrapper {
-  z-index: 999999;
+  z-index: 9999;
   display: flex;
   justify-content: center;
   position: absolute;
@@ -120,11 +162,6 @@ h2 {
     border: none;
 }
 
-.navbar .navbar-collapse {
-  text-align: center;
-  background-color: none;
-  border: none;
-}
 .background-dark {
     background-color: rgba(0, 0, 0, 0.8);
 }
@@ -492,6 +529,9 @@ span.close-details {
     padding: 20px 10px 60px 10px;
 }
 /************************* modal popup ************************/
+.modal {
+    z-index: 99999;
+}
 .modal-content {
     border-radius: 4px;
 }
