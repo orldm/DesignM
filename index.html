@@ -10,11 +10,13 @@
     <!--<link type="text/css" href="assets/stylesheets/fonts.css" rel="stylesheet">-->
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
     <link type="text/css" href="assets/stylesheets/slick.css" rel="stylesheet">
+    <link type="text/css" href="assets/stylesheets/dropzone.min.css" rel="stylesheet">
     <link type="text/css" href="assets/stylesheets/main.css" rel="stylesheet">
     <link type="text/css" href="assets/stylesheets/media.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" defer></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous" defer></script>
     <script src="assets/javascripts/slick.min.js" defer></script>
+    <script src="assets/javascripts/dropzone.min.js" defer></script>
     <script src="assets/javascripts/main.js" defer></script>
 </head>
 <body>
@@ -262,8 +264,8 @@
                         <p>Your project idea</p>
                         <textarea rows="5" name="comment" form="usrform"></textarea>
                         <p>Upload file</p>
-                        <div class="upload-area">
-                            <img src="./assets/images/icon-upload.png" alt="drop file here">
+                        <div class="upload-area" id="my-awesome-dropzone">
+                            <img src="./assets/images/icon-upload.png" id="dropzone-prompt" alt="drop file here">
                         </div>
                         <button class="btn btn-send">SEND</button>
                     </form>

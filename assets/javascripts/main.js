@@ -1,4 +1,9 @@
 $(document).ready(function() {
+    Dropzone.autoDiscover = false;
+    var myDropzone = new Dropzone("#my-awesome-dropzone", { url: "/file/post"});
+    myDropzone.on("drop", function(e) {
+        $('#dropzone-prompt').css('display', 'none');
+    });
     $(window).scroll(function () {
         if ($(window).scrollTop() > 35 && $(window).width() > 752) {
             $('.navbar-wrapper').addClass('navbar-fixed');
