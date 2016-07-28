@@ -1,3 +1,8 @@
+@media screen and (min-width: 1200px) {
+    .nav-link-fixed {
+        padding: 40px 65px !important;
+    }
+}
 @media screen and (max-width: 992px) {
     h1 {
         font-size: 2.6rem;
@@ -36,12 +41,17 @@
 }
 
 @media screen and (max-width: 767px) {
+    .top-logo {
+        position: absolute;
+        z-index: 999;
+    }
     h1 {
         font-size: 2rem;
     }
     .navbar-wrapper {
         top: 0;
         justify-content: flex-end;
+        background-color: transparent !important;
     }
     .language-panel {
         display: none;
@@ -61,23 +71,19 @@
         position: fixed;
         width: 100%;
         background-color: #262223;
+        margin: 0;
     }
     /*.background-dark {
         background-color: #262223;
     }*/
     .navbar .navbar-collapse>ul {
-        /*padding-bottom: 50px;*/
         padding-top: 100px !important;
         height: 100vh !important;
     }
     .navbar-inverse .navbar-nav>li>a {
         font-weight: 500;
-        /*letter-spacing: 0.4rem;*/
         font-size: 1rem;
         line-height: 35px;
-        /*padding-top: 40px;*/
-        /*padding-bottom: 40px;*/
-        /*height: 26vh !important;*/
         overflow: visible !important;
     }
     .nav>li.logo-placeholder {
@@ -168,7 +174,6 @@
     h1 {
         font-size: 2.2rem;
         line-height: 2.5rem;
-        /*letter-spacing: 0.6rem;*/
     }
     h2 {
         font-size: 1.6rem;
@@ -237,11 +242,6 @@
     }
     .tab-pane-text {
         width: 100%;
-    }
-    .tab-pane-pics {
-        /*display: flex;
-        flex-wrap: nowrap;
-        overflow: hidden;*/
     }
     .tab-pane-pics .col-xs-3 {
         width: auto;

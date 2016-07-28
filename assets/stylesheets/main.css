@@ -55,10 +55,10 @@ h2 {
     letter-spacing: 0.15rem;
 }
 .top-logo {
-    position: absolute;
-    top: 10px;
+    position: fixed;
+    top: 5px;
     left: calc(50% - 35px);
-    z-index: 999;
+    z-index: 999999;
 }
 #logo-small {
     opacity: 0;
@@ -101,25 +101,33 @@ button.selected {
     border-color: white;
 }
 
+.container-fluid, .navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+}
 
-.navbar-fixed {
+
+/*.navbar-fixed {
     position: fixed!important;
     top: 0!important;
-    /*background-color: rgba(255, 255, 255, 0.75);*/
-}
+    background-color: rgba(255, 255, 255, 0.75);
+}*/
 .nav-link-fixed {
     /*color: black !important;*/
     font-size: 0.9rem !important;
-    padding: 15px 35px !important;
+    padding: 40px 35px !important;
 }
 .navbar-wrapper {
+  position: fixed !important;
   z-index: 9999;
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 34px;
-  height: 50px;
+  top: 0;
+  height: 100px;
   width: 100%;
+  border-top: 3px solid #AE3852;
+  background-color: transparent;
 
 /*-webkit-transition: font-size 0.2s;
 /*-moz-transition: all 0.2s;
@@ -147,6 +155,7 @@ button.selected {
     background-color: #AE3852;
 }
 .navbar-inverse .navbar-nav>li>a {
+    padding-top: 40px;
     color: white;
     font-family: Ubuntu;
     font-weight: 500;
