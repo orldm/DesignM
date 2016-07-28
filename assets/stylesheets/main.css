@@ -65,29 +65,29 @@ h2 {
 }
 .language-panel {
     position: fixed;
-    top: 15px;
-    right: 20px;
+    top: 34px;
+    right: 15px;
     z-index: 99999
 }
 .language-panel button {
-    padding: 2px;
+    padding: 10px;
     font-family: Ubuntu;
     font-weight: 500;
-    font-size: 0.8rem;
-    color: white;
-    border: 1px solid;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.75);
+    border: 1px solid #AE3852;
     border-color: transparent;
     background: none;
 }
 
 .language-panel-mobile {
-    padding-top: 40px;
+    padding-top: 70px;
     display: none;
     margin-left: 0 auto;
     margin-right: 0 auto;
 }
 .language-panel-mobile button {
-    padding: 6px;
+    padding: 16px;
     font-family: Ubuntu;
     font-weight: 500;
     font-size: 1rem;
@@ -98,7 +98,7 @@ h2 {
 }
 
 button.selected {
-    border-color: white;
+    border-color: #AE3852;
 }
 
 .container-fluid, .navbar-collapse {
@@ -113,7 +113,6 @@ button.selected {
     background-color: rgba(255, 255, 255, 0.75);
 }*/
 .nav-link-fixed {
-    /*color: black !important;*/
     font-size: 0.9rem !important;
     padding: 40px 35px !important;
 }
