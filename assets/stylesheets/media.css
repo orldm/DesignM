@@ -240,9 +240,8 @@
     }
     .tab-pane-pics {
         /*display: flex;
-        flex-wrap: nowrap;*/
-        overflow: hidden;
-        width: 500%;
+        flex-wrap: nowrap;
+        overflow: hidden;*/
     }
     .tab-pane-pics .col-xs-3 {
         width: auto;

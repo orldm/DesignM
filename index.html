@@ -9,10 +9,12 @@
     <link type="text/css" href="assets/stylesheets/col-15.css" rel="stylesheet">
     <!--<link type="text/css" href="assets/stylesheets/fonts.css" rel="stylesheet">-->
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
+    <link type="text/css" href="assets/stylesheets/slick.css" rel="stylesheet">
     <link type="text/css" href="assets/stylesheets/main.css" rel="stylesheet">
     <link type="text/css" href="assets/stylesheets/media.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" defer></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous" defer></script>
+    <script src="assets/javascripts/slick.min.js" defer></script>
     <script src="assets/javascripts/main.js" defer></script>
 </head>
 <body>
@@ -53,28 +55,7 @@
             </div>
         </nav>
     </div>
-
-        
-    <!--<div class="header-menu text-center">
-        <div class="col-sm-15 top-link">
-            <a href="#process" class="js-anchor">OUR PROCESS</a>
-        </div>
-        <div class="col-sm-15 top-link">
-            <a href="#showcases" class="js-anchor">SHOWCASES</a>
-        </div>
-        <div class="col-sm-15 no-padding">
-            <img src="./assets/images/logo.png" alt="logo">
-        </div>
-        <div class="col-sm-15 top-link">
-            <a href="#about" class="js-anchor">ABOUT US</a>
-        </div>
-        <div class="col-sm-15 top-link">
-            <a href="#contacts" class="js-anchor">CONTACT US</a>
-        </div>
-    </div>-->
-
-
-
+    
     <div id="main-carousel" class="carousel slide" data-ride="carousel">
         <div class="main-title text-center">
             <h1>ELEGANT INTERIOR</h1>
@@ -142,474 +123,49 @@
         <div class="col-md-12 text-center">
             <h2>OUR WORKS</h2>
         </div>
+
         <div class="gallery-container">
             <div class="col-sm-15 gallery-img-col line-divider">
                 <div class="details-overlay text-center">
                     <h3>Ste-therese</h3>
-                    <button class="btn btn-details js-details">DETAILS</button>
+                    <button class="btn btn-details js-details" id="showcase-button-0">DETAILS</button>
                 </div>
                 <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
-                <div class="arrow-up no-margin hidden"></div>
+                <div class="arrow-up no-margin hidden" id="arrow0"></div>
             </div>
-
-            <div class="details-container">
-                <h2>STE-THERESE <span class="project-details">Project&nbsp;residentiels</span></h2>
-                <span class="close-details js-close-details">&#x2715;</span>
-
-                <ul class="nav nav-pills">
-                    <li class="active"><a data-toggle="pill" href="#menu00">Cuisine</a></li>
-                    <li><a data-toggle="pill" href="#menu01">Salle de bain</a></li>
-                    <li><a data-toggle="pill" href="#menu02">Salle de bain/salle de lavage</a></li>
-                </ul>
-
-                <div class="tab-content">
-                    <div id="menu00" class="tab-pane fade in active">
-                        <div class="tab-pane-text">
-                            <p>
-                                Dans cette résidence datant des années 1970, une rénovation Cuisine s'imposait. Tout en respectant le caractère et la personnalité
-                                de cette résidence, le style a été actualisé. Dans ce décor traditionnel, des matériaux nobles ont été
-                                utilisés tel que le quartz, le bois et le marbre. Les couleurs terre apporte beaucoup de chaleur à cette
-                                pièce très convoitées.
-                            </p>
-                        </div>
-                        <div class="tab-pane-pics">
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="menu01" class="tab-pane fade">
-                        <div class="tab-pane-text">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea illo exercitationem unde, quos, pariatur necessitatibus eius
-                                iusto aperiam eaque eligendi accusamus non voluptates asperiores! Ut reiciendis pariatur dolore dolores
-                                hic!
-                            </p>
-                        </div>
-                        <div class="tab-pane-pics">
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="menu02" class="tab-pane fade">
-                        <div class="tab-pane-text">
-                            <p>
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-                                ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                            </p>
-                        </div>
-                        <div class="tab-pane-pics">
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <div class="col-sm-15 gallery-img-col line-divider">
                 <div class="details-overlay text-center">
                     <h3>Ste-therese</h3>
-                    <button class="btn btn-details js-details">DETAILS</button>
+                    <button class="btn btn-details js-details" id="showcase-button-1">DETAILS</button>
                 </div>
                 <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
-                <div class="arrow-up no-margin hidden"></div>
+                <div class="arrow-up no-margin hidden" id="arrow1"></div>
             </div>
-
-            <div class="details-container">
-                <h2>STE-THERESE <span class="project-details">Project&nbsp;residentiels</span></h2>
-                <span class="close-details js-close-details">&#x2715;</span>
-
-                <ul class="nav nav-pills">
-                    <li class="active"><a data-toggle="pill" href="#menu10">Cuisine</a></li>
-                    <li><a data-toggle="pill" href="#menu11">Salle de bain</a></li>
-                    <li><a data-toggle="pill" href="#menu12">Salle de bain/salle de lavage</a></li>
-                </ul>
-
-                <div class="tab-content">
-                    <div id="menu10" class="tab-pane fade in active">
-                        <div class="tab-pane-text">
-                            <p>
-                                Dans cette résidence datant des années 1970, une rénovation Cuisine s'imposait. Tout en respectant le caractère et la personnalité
-                                de cette résidence, le style a été actualisé. Dans ce décor traditionnel, des matériaux nobles ont été
-                                utilisés tel que le quartz, le bois et le marbre. Les couleurs terre apporte beaucoup de chaleur à cette
-                                pièce très convoitées.
-                            </p>
-                        </div>
-                        <div class="tab-pane-pics">
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="menu11" class="tab-pane fade">
-                        <div class="tab-pane-text">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea illo exercitationem unde, quos, pariatur necessitatibus eius
-                                iusto aperiam eaque eligendi accusamus non voluptates asperiores! Ut reiciendis pariatur dolore dolores
-                                hic!
-                            </p>
-                        </div>
-                        <div class="tab-pane-pics">
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="menu12" class="tab-pane fade">
-                        <div class="tab-pane-text">
-                            <p>
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-                                ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                            </p>
-                        </div>
-                        <div class="tab-pane-pics">
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <div class="col-sm-15 gallery-img-col line-divider">
                 <div class="details-overlay text-center">
                     <h3>Ste-therese</h3>
-                    <button class="btn btn-details js-details">DETAILS</button>
+                    <button class="btn btn-details js-details" id="showcase-button-2">DETAILS</button>
                 </div>
                 <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
-                <div class="arrow-up no-margin hidden"></div>
+                <div class="arrow-up no-margin hidden" id="arrow2"></div>
             </div>
-
-            <div class="details-container">
-                <h2>STE-THERESE <span class="project-details">Project&nbsp;residentiels</span></h2>
-                <span class="close-details js-close-details">&#x2715;</span>
-
-                <ul class="nav nav-pills">
-                    <li class="active"><a data-toggle="pill" href="#menu20">Cuisine</a></li>
-                    <li><a data-toggle="pill" href="#menu21">Salle de bain</a></li>
-                    <li><a data-toggle="pill" href="#menu22">Salle de bain/salle de lavage</a></li>
-                </ul>
-
-                <div class="tab-content">
-                    <div id="menu20" class="tab-pane fade in active">
-                        <div class="tab-pane-text">
-                            <p>
-                                Dans cette résidence datant des années 1970, une rénovation Cuisine s'imposait. Tout en respectant le caractère et la personnalité
-                                de cette résidence, le style a été actualisé. Dans ce décor traditionnel, des matériaux nobles ont été
-                                utilisés tel que le quartz, le bois et le marbre. Les couleurs terre apporte beaucoup de chaleur à cette
-                                pièce très convoitées.
-                            </p>
-                        </div>
-                        <div class="tab-pane-pics">
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="menu21" class="tab-pane fade">
-                        <div class="tab-pane-text">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea illo exercitationem unde, quos, pariatur necessitatibus eius
-                                iusto aperiam eaque eligendi accusamus non voluptates asperiores! Ut reiciendis pariatur dolore dolores
-                                hic!
-                            </p>
-                        </div>
-                        <div class="tab-pane-pics">
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="menu22" class="tab-pane fade">
-                        <div class="tab-pane-text">
-                            <p>
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-                                ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                            </p>
-                        </div>
-                        <div class="tab-pane-pics">
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <div class="col-sm-15 gallery-img-col line-divider">
                 <div class="details-overlay text-center">
                     <h3>Ste-therese</h3>
-                    <button class="btn btn-details js-details">DETAILS</button>
+                    <button class="btn btn-details js-details" id="showcase-button-3">DETAILS</button>
                 </div>
                 <img src="./assets/images/works-04.png" class="img-responsive img-scale-up" alt="appartment photo">
-                <div class="arrow-up no-margin hidden"></div>
+                <div class="arrow-up no-margin hidden" id="arrow3"></div>
             </div>
-
-            <div class="details-container">
-                <h2>STE-THERESE <span class="project-details">Project&nbsp;residentiels</span></h2>
-                <span class="close-details js-close-details">&#x2715;</span>
-
-                <ul class="nav nav-pills">
-                    <li class="active"><a data-toggle="pill" href="#menu30">Cuisine</a></li>
-                    <li><a data-toggle="pill" href="#menu31">Salle de bain</a></li>
-                    <li><a data-toggle="pill" href="#menu32">Salle de bain/salle de lavage</a></li>
-                </ul>
-
-                <div class="tab-content">
-                    <div id="menu30" class="tab-pane fade in active">
-                        <div class="tab-pane-text">
-                            <p>
-                                Dans cette résidence datant des années 1970, une rénovation Cuisine s'imposait. Tout en respectant le caractère et la personnalité
-                                de cette résidence, le style a été actualisé. Dans ce décor traditionnel, des matériaux nobles ont été
-                                utilisés tel que le quartz, le bois et le marbre. Les couleurs terre apporte beaucoup de chaleur à cette
-                                pièce très convoitées.
-                            </p>
-                        </div>
-                        <div class="tab-pane-pics">
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="menu31" class="tab-pane fade">
-                        <div class="tab-pane-text">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea illo exercitationem unde, quos, pariatur necessitatibus eius
-                                iusto aperiam eaque eligendi accusamus non voluptates asperiores! Ut reiciendis pariatur dolore dolores
-                                hic!
-                            </p>
-                        </div>
-                        <div class="tab-pane-pics">
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="menu32" class="tab-pane fade">
-                        <div class="tab-pane-text">
-                            <p>
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-                                ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                            </p>
-                        </div>
-                        <div class="tab-pane-pics">
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
             <div class="col-sm-15 gallery-img-col height-adjust">
                 <div class="details-overlay text-center">
                     <h3>Ste-therese</h3>
-                    <button class="btn btn-details js-details">DETAILS</button>
+                    <button class="btn btn-details js-details" id="showcase-button-4">DETAILS</button>
                 </div>
                 <img src="./assets/images/works-05.png" class="img-responsive img-scale-up" alt="appartment photo">
-                <div class="arrow-up no-margin hidden"></div>
+                <div class="arrow-up no-margin hidden" id="arrow4"></div>
             </div>
-
-            <div class="details-container">
-                <h2>STE-THERESE <span class="project-details">Project&nbsp;residentiels</span></h2>
-                <span class="close-details js-close-details">&#x2715;</span>
-
-                <ul class="nav nav-pills">
-                    <li class="active"><a data-toggle="pill" href="#menu40">Cuisine</a></li>
-                    <li><a data-toggle="pill" href="#menu41">Salle de bain</a></li>
-                    <li><a data-toggle="pill" href="#menu42">Salle de bain/salle de lavage</a></li>
-                </ul>
-
-                <div class="tab-content">
-                    <div id="menu40" class="tab-pane fade in active">
-                        <div class="tab-pane-text">
-                            <p>
-                                Dans cette résidence datant des années 1970, une rénovation Cuisine s'imposait. Tout en respectant le caractère et la personnalité
-                                de cette résidence, le style a été actualisé. Dans ce décor traditionnel, des matériaux nobles ont été
-                                utilisés tel que le quartz, le bois et le marbre. Les couleurs terre apporte beaucoup de chaleur à cette
-                                pièce très convoitées.
-                            </p>
-                        </div>
-                        <div class="tab-pane-pics">
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="menu41" class="tab-pane fade">
-                        <div class="tab-pane-text">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea illo exercitationem unde, quos, pariatur necessitatibus eius
-                                iusto aperiam eaque eligendi accusamus non voluptates asperiores! Ut reiciendis pariatur dolore dolores
-                                hic!
-                            </p>
-                        </div>
-                        <div class="tab-pane-pics">
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="menu42" class="tab-pane fade">
-                        <div class="tab-pane-text">
-                            <p>
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-                                ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                            </p>
-                        </div>
-                        <div class="tab-pane-pics">
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                            <div class="col-xs-3">
-                                <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
         </div>
-
-        
     </div>
 
     <div class="color-line"></div>
@@ -718,6 +274,476 @@
             </div>
         </div>
     </div>
+
+<script type="text/template" id="showcase0">
+    <div class="details-container">
+        <h2>STE-THERESE <span class="project-details">Project&nbsp;residentiels</span></h2>
+        <span class="close-details js-close-details" id="closeShowcase0">&#x2715;</span>
+
+        <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#menu00">Cuisine</a></li>
+            <li><a data-toggle="pill" href="#menu01">Salle de bain</a></li>
+            <li><a data-toggle="pill" href="#menu02">Salle de bain/salle de lavage</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="menu00" class="tab-pane fade in active">
+                <div class="tab-pane-text">
+                    <p>
+                        Dans cette résidence datant des années 1970, une rénovation Cuisine s'imposait. Tout en respectant le caractère et la personnalité
+                        de cette résidence, le style a été actualisé. Dans ce décor traditionnel, des matériaux nobles ont été
+                        utilisés tel que le quartz, le bois et le marbre. Les couleurs terre apporte beaucoup de chaleur à cette
+                        pièce très convoitées.
+                    </p>
+                </div>
+                <div class="tab-pane-pics">
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                </div>
+            </div>
+            <div id="menu01" class="tab-pane fade">
+                <div class="tab-pane-text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea illo exercitationem unde, quos, pariatur necessitatibus eius
+                        iusto aperiam eaque eligendi accusamus non voluptates asperiores! Ut reiciendis pariatur dolore dolores
+                        hic!
+                    </p>
+                </div>
+                <div class="tab-pane-pics">
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                </div>
+            </div>
+            <div id="menu02" class="tab-pane fade">
+                <div class="tab-pane-text">
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                        ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    </p>
+                </div>
+                <div class="tab-pane-pics">
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/template" id="showcase1">
+    <div class="details-container">
+        <h2>Showcase Two <span class="project-details">Project&nbsp;residentiels</span></h2>
+        <span class="close-details js-close-details" id="closeShowcase1">&#x2715;</span>
+
+        <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#menu00">Cuisine</a></li>
+            <li><a data-toggle="pill" href="#menu01">Salle de bain</a></li>
+            <li><a data-toggle="pill" href="#menu02">Salle de bain/salle de lavage</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="menu00" class="tab-pane fade in active">
+                <div class="tab-pane-text">
+                    <p>
+                        Dans cette résidence datant des années 1970, une rénovation Cuisine s'imposait. Tout en respectant le caractère et la personnalité
+                        de cette résidence, le style a été actualisé. Dans ce décor traditionnel, des matériaux nobles ont été
+                        utilisés tel que le quartz, le bois et le marbre. Les couleurs terre apporte beaucoup de chaleur à cette
+                        pièce très convoitées.
+                    </p>
+                </div>
+                <div class="tab-pane-pics">
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                </div>
+            </div>
+            <div id="menu01" class="tab-pane fade">
+                <div class="tab-pane-text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea illo exercitationem unde, quos, pariatur necessitatibus eius
+                        iusto aperiam eaque eligendi accusamus non voluptates asperiores! Ut reiciendis pariatur dolore dolores
+                        hic!
+                    </p>
+                </div>
+                <div class="tab-pane-pics">
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                </div>
+            </div>
+            <div id="menu02" class="tab-pane fade">
+                <div class="tab-pane-text">
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                        ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    </p>
+                </div>
+                <div class="tab-pane-pics">
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/template" id="showcase2">
+    <div class="details-container">
+        <h2>Showcase Three <span class="project-details">Project&nbsp;residentiels</span></h2>
+        <span class="close-details js-close-details"  id="closeShowcase2">&#x2715;</span>
+
+        <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#menu00">Cuisine</a></li>
+            <li><a data-toggle="pill" href="#menu01">Salle de bain</a></li>
+            <li><a data-toggle="pill" href="#menu02">Salle de bain/salle de lavage</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="menu00" class="tab-pane fade in active">
+                <div class="tab-pane-text">
+                    <p>
+                        Dans cette résidence datant des années 1970, une rénovation Cuisine s'imposait. Tout en respectant le caractère et la personnalité
+                        de cette résidence, le style a été actualisé. Dans ce décor traditionnel, des matériaux nobles ont été
+                        utilisés tel que le quartz, le bois et le marbre. Les couleurs terre apporte beaucoup de chaleur à cette
+                        pièce très convoitées.
+                    </p>
+                </div>
+                <div class="tab-pane-pics">
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                </div>
+            </div>
+            <div id="menu01" class="tab-pane fade">
+                <div class="tab-pane-text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea illo exercitationem unde, quos, pariatur necessitatibus eius
+                        iusto aperiam eaque eligendi accusamus non voluptates asperiores! Ut reiciendis pariatur dolore dolores
+                        hic!
+                    </p>
+                </div>
+                <div class="tab-pane-pics">
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                </div>
+            </div>
+            <div id="menu02" class="tab-pane fade">
+                <div class="tab-pane-text">
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                        ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    </p>
+                </div>
+                <div class="tab-pane-pics">
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/template" id="showcase3">
+    <div class="details-container">
+        <h2>Showcase Four <span class="project-details">Project&nbsp;residentiels</span></h2>
+        <span class="close-details js-close-details"  id="closeShowcase3">&#x2715;</span>
+
+        <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#menu00">Cuisine</a></li>
+            <li><a data-toggle="pill" href="#menu01">Salle de bain</a></li>
+            <li><a data-toggle="pill" href="#menu02">Salle de bain/salle de lavage</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="menu00" class="tab-pane fade in active">
+                <div class="tab-pane-text">
+                    <p>
+                        Dans cette résidence datant des années 1970, une rénovation Cuisine s'imposait. Tout en respectant le caractère et la personnalité
+                        de cette résidence, le style a été actualisé. Dans ce décor traditionnel, des matériaux nobles ont été
+                        utilisés tel que le quartz, le bois et le marbre. Les couleurs terre apporte beaucoup de chaleur à cette
+                        pièce très convoitées.
+                    </p>
+                </div>
+                <div class="tab-pane-pics">
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                </div>
+            </div>
+            <div id="menu01" class="tab-pane fade">
+                <div class="tab-pane-text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea illo exercitationem unde, quos, pariatur necessitatibus eius
+                        iusto aperiam eaque eligendi accusamus non voluptates asperiores! Ut reiciendis pariatur dolore dolores
+                        hic!
+                    </p>
+                </div>
+                <div class="tab-pane-pics">
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                </div>
+            </div>
+            <div id="menu02" class="tab-pane fade">
+                <div class="tab-pane-text">
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                        ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    </p>
+                </div>
+                <div class="tab-pane-pics">
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/template" id="showcase4">
+    <div class="details-container">
+        <h2>Showcase Five <span class="project-details">Project&nbsp;residentiels</span></h2>
+        <span class="close-details js-close-details"  id="closeShowcase4">&#x2715;</span>
+
+        <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#menu00">Cuisine</a></li>
+            <li><a data-toggle="pill" href="#menu01">Salle de bain</a></li>
+            <li><a data-toggle="pill" href="#menu02">Salle de bain/salle de lavage</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="menu00" class="tab-pane fade in active">
+                <div class="tab-pane-text">
+                    <p>
+                        Dans cette résidence datant des années 1970, une rénovation Cuisine s'imposait. Tout en respectant le caractère et la personnalité
+                        de cette résidence, le style a été actualisé. Dans ce décor traditionnel, des matériaux nobles ont été
+                        utilisés tel que le quartz, le bois et le marbre. Les couleurs terre apporte beaucoup de chaleur à cette
+                        pièce très convoitées.
+                    </p>
+                </div>
+                <div class="tab-pane-pics">
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                </div>
+            </div>
+            <div id="menu01" class="tab-pane fade">
+                <div class="tab-pane-text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea illo exercitationem unde, quos, pariatur necessitatibus eius
+                        iusto aperiam eaque eligendi accusamus non voluptates asperiores! Ut reiciendis pariatur dolore dolores
+                        hic!
+                    </p>
+                </div>
+                <div class="tab-pane-pics">
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                </div>
+            </div>
+            <div id="menu02" class="tab-pane fade">
+                <div class="tab-pane-text">
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                        ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    </p>
+                </div>
+                <div class="tab-pane-pics">
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
 
 </body>
 </html>
