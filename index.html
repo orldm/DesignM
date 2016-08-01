@@ -11,12 +11,16 @@
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
     <link type="text/css" href="assets/stylesheets/slick.css" rel="stylesheet">
     <link type="text/css" href="assets/stylesheets/dropzone.min.css" rel="stylesheet">
+    <link type="text/css" href="assets/stylesheets/photoswipe.css" rel="stylesheet">
+    <link type="text/css" href="assets/stylesheets/default-skin/default-skin.css" rel="stylesheet">
     <link type="text/css" href="assets/stylesheets/main.css" rel="stylesheet">
     <link type="text/css" href="assets/stylesheets/media.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" defer></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous" defer></script>
     <script src="assets/javascripts/slick.min.js" defer></script>
     <script src="assets/javascripts/dropzone.min.js" defer></script>
+    <script src="assets/javascripts/photoswipe.min.js" defer></script>
+    <script src="assets/javascripts/photoswipe-ui-default.min.js" defer></script>    
     <script src="assets/javascripts/main.js" defer></script>
 </head>
 <body>
@@ -132,7 +136,7 @@
                     <h3>Ste-therese</h3>
                     <button class="btn btn-details js-details" id="showcase-button-0">DETAILS</button>
                 </div>
-                <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                <img src="./assets/images/works-01.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                 <div class="arrow-up no-margin hidden" id="arrow0"></div>
             </div>
             <div class="col-sm-15 gallery-img-col line-divider">
@@ -140,7 +144,7 @@
                     <h3>Ste-therese</h3>
                     <button class="btn btn-details js-details" id="showcase-button-1">DETAILS</button>
                 </div>
-                <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                <img src="./assets/images/works-02.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                 <div class="arrow-up no-margin hidden" id="arrow1"></div>
             </div>
             <div class="col-sm-15 gallery-img-col line-divider">
@@ -148,7 +152,7 @@
                     <h3>Ste-therese</h3>
                     <button class="btn btn-details js-details" id="showcase-button-2">DETAILS</button>
                 </div>
-                <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                <img src="./assets/images/works-03.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                 <div class="arrow-up no-margin hidden" id="arrow2"></div>
             </div>
             <div class="col-sm-15 gallery-img-col line-divider">
@@ -156,7 +160,7 @@
                     <h3>Ste-therese</h3>
                     <button class="btn btn-details js-details" id="showcase-button-3">DETAILS</button>
                 </div>
-                <img src="./assets/images/works-04.png" class="img-responsive img-scale-up" alt="appartment photo">
+                <img src="./assets/images/works-04.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                 <div class="arrow-up no-margin hidden" id="arrow3"></div>
             </div>
             <div class="col-sm-15 gallery-img-col height-adjust">
@@ -164,7 +168,7 @@
                     <h3>Ste-therese</h3>
                     <button class="btn btn-details js-details" id="showcase-button-4">DETAILS</button>
                 </div>
-                <img src="./assets/images/works-05.png" class="img-responsive img-scale-up" alt="appartment photo">
+                <img src="./assets/images/works-05.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                 <div class="arrow-up no-margin hidden" id="arrow4"></div>
             </div>
         </div>
@@ -300,19 +304,19 @@
                 </div>
                 <div class="tab-pane-pics">
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                 </div>
             </div>
@@ -326,19 +330,19 @@
                 </div>
                 <div class="tab-pane-pics">
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                 </div>
             </div>
@@ -351,19 +355,19 @@
                 </div>
                 <div class="tab-pane-pics">
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                 </div>
             </div>
@@ -394,19 +398,19 @@
                 </div>
                 <div class="tab-pane-pics">
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up  tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up  tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up  tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up  tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up  tab-pane-img" alt="appartment photo">
                     </div>
                 </div>
             </div>
@@ -420,19 +424,19 @@
                 </div>
                 <div class="tab-pane-pics">
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                 </div>
             </div>
@@ -445,19 +449,19 @@
                 </div>
                 <div class="tab-pane-pics">
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                 </div>
             </div>
@@ -488,19 +492,19 @@
                 </div>
                 <div class="tab-pane-pics">
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                 </div>
             </div>
@@ -514,19 +518,19 @@
                 </div>
                 <div class="tab-pane-pics">
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                 </div>
             </div>
@@ -539,19 +543,19 @@
                 </div>
                 <div class="tab-pane-pics">
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                 </div>
             </div>
@@ -582,19 +586,19 @@
                 </div>
                 <div class="tab-pane-pics">
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                 </div>
             </div>
@@ -608,19 +612,19 @@
                 </div>
                 <div class="tab-pane-pics">
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                 </div>
             </div>
@@ -633,19 +637,19 @@
                 </div>
                 <div class="tab-pane-pics">
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                 </div>
             </div>
@@ -676,19 +680,19 @@
                 </div>
                 <div class="tab-pane-pics">
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-01.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                 </div>
             </div>
@@ -702,19 +706,19 @@
                 </div>
                 <div class="tab-pane-pics">
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-02.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                 </div>
             </div>
@@ -727,25 +731,123 @@
                 </div>
                 <div class="tab-pane-pics">
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                     <div class="col-xs-3">
-                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up" alt="appartment photo">
+                        <img src="./assets/images/works-03.png" class="img-responsive img-scale-up tab-pane-img" alt="appartment photo">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </script>
+
+<!-------modal popup------->
+
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <button type="button" class="close" data-dismiss="modal">&#x2715;</button>
+                    <h2 class="modal-title">GET A QUOTATION!</h2>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <p>Name</p>
+                        <input type="text" name="name">
+                        <p>E-mail</p>
+                        <input type="email" name="email">
+                        <p>Your project idea</p>
+                        <textarea rows="5" name="comment" form="usrform"></textarea>
+                        <p>Upload file</p>
+                        <div class="upload-area" id="my-awesome-dropzone">
+                            <img src="./assets/images/icon-upload.png" id="dropzone-prompt" alt="drop file here">
+                        </div>
+                        <button class="btn btn-send">SEND</button>
+                    </form>
+                </div>
+                <!--<div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>-->
+            </div>
+        </div>
+    </div>
+
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe. 
+            It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides. 
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </body>
 </html>

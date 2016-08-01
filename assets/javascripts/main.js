@@ -1,9 +1,11 @@
 $(document).ready(function() {
+    // dropzone plugin init
     Dropzone.autoDiscover = false;
     var myDropzone = new Dropzone("#my-awesome-dropzone", { url: "/file/post"});
     myDropzone.on("drop", function(e) {
         $('#dropzone-prompt').css('display', 'none');
     });
+
     $(window).scroll(function () {
         if ($(window).scrollTop() > 35 && $(window).width() > 752) {
             var alpha =  Math.min(0.95 ,($(window).scrollTop() - 35)/135);
@@ -53,7 +55,8 @@ $(document).ready(function() {
     });
     $('.js-details').click(function() {
         var tabNumber = $(this).attr('id').slice(-1),
-                tabId = "#showcase"+tabNumber;
+                tabId = "#showcase"+tabNumber,
+                swipe =false; 
 
         if (!($(this).hasClass('current'))) {
             if ($('.current').length > 0) {
@@ -68,6 +71,13 @@ $(document).ready(function() {
                         slidesToScroll: 1,
                         arrows: false
                     });
+                    $('.tab-pane-pics').on('swipe', function(e) {
+                        swipe = true;
+                    });
+                    $('.tab-pane-pics').on('afterChange', function(e) {
+                        swipe = false;
+                    });
+                    
                 } else {
                     $('.details-container').replaceWith(newContent);
                     $('.details-container').css('max-height', '9999px').css('opacity', '1');
@@ -76,6 +86,12 @@ $(document).ready(function() {
                         slidesToShow: 4,
                         slidesToScroll: 1,
                         arrows: false
+                    });
+                    $('.tab-pane-pics').on('swipe', function(e) {
+                        swipe = true;
+                    });
+                    $('.tab-pane-pics').on('afterChange', function(e) {
+                        swipe = false;
                     });
                 }
                 $('.js-close-details').click(function () {
@@ -114,6 +130,12 @@ $(document).ready(function() {
                         slidesToScroll: 1,
                         arrows: false
                     });
+                    $('.tab-pane-pics').on('swipe', function(e) {
+                        swipe = true;
+                    });
+                    $('.tab-pane-pics').on('afterChange', function(e) {
+                        swipe = false;
+                    });
                 } else {
                     $($(tabId).html()).insertAfter('.gallery-container');
                     $('.tab-pane-pics').slick({
@@ -122,8 +144,16 @@ $(document).ready(function() {
                         slidesToScroll: 1,
                         arrows: false
                     });
+
+                    $('.tab-pane-pics').on('swipe', function(e) {
+                        swipe = true;
+                    });
+                    $('.tab-pane-pics').on('afterChange', function(e) {
+                        swipe = false;
+                    });
                 }
                 $('.details-container').css('max-height', '9999px').css('opacity', '1');
+                
                 $('.js-close-details').click(function() {
                     $('.js-details').removeClass('current');
                     $('.details-container').css('max-height', '0').css('opacity', '0');
@@ -140,5 +170,32 @@ $(document).ready(function() {
                 }, 100);
             }
         }
+
+        $('.tab-pane-img').off().click(function() {
+            if (!swipe) {
+                var pswpElement = document.querySelectorAll('.pswp')[0];
+
+            // build items array
+            var items = [
+                {
+                    src: $(this).attr('src'),
+                    w: 400,
+                    h: 400
+                }
+            ];
+
+            // define options (if needed)
+            var options = {
+                // optionName: 'option value'
+                // for example:
+                index: 0 // start at first slide
+            };
+
+            // Initializes and opens PhotoSwipe
+            var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+            gallery.init();
+
+            }
+        });
     });
 });
