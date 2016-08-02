@@ -66,7 +66,7 @@ h2 {
 .language-panel {
     position: fixed;
     top: 34px;
-    right: 15px;
+    left: calc(100% - 100px);
     z-index: 99999
 }
 .language-panel button {
