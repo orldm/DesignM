@@ -59,6 +59,11 @@ h2 {
     top: 5px;
     left: calc(50% - 35px);
     z-index: 99999;
+    transition: all 0.4s;
+}
+.top-logo-resized {
+    transform: scale(0.8, 0.8);
+    left: calc(50% - 30px);
 }
 #logo-small {
     opacity: 0;
