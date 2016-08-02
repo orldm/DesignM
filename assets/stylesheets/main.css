@@ -474,7 +474,7 @@ span.close-details {
     background-color: #F6F6F6;
 }
 .service-bottom-container p {
-    position: absolute;
+    position: relative;
     top: 60px;
     padding: 0 15px;
     color: #666666;
