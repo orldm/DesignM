@@ -208,11 +208,13 @@ $(document).ready(function() {
             var bodyInnerWidth = $('body').innerWidth();
             $('.navbar-wrapper').css('width', bodyInnerWidth);
             $('.top-logo').css('left', (bodyInnerWidth/2) - 35);
-            $('.language-panel').css('left', bodyInnerWidth - 100);
+            // $('.language-panel').css('left', bodyInnerWidth - 100);
+            $('.language-panel').attr('style', 'left:'+(bodyInnerWidth - 100)+'px;');
         });
     $('#myModal').on('hidden.bs.modal', function () {
             $('.navbar-wrapper').css('width', '100%');
             $('.top-logo').css('left', 'calc(50% - 35px)');
-            $('.language-panel').css('left', 'calc(100% - 100px)');
+            // $('.language-panel').css('left', 'calc(100% - 100px)');
+            $('.language-panel').attr('style', 'left:calc(100% - 100px);');
         });
 });

@@ -102,6 +102,10 @@ h2 {
     background: none;
 }
 
+#qtranslate-chooser {
+    right: inherit !important;
+}
+
 button.selected {
     border-color: #AE3852;
 }
