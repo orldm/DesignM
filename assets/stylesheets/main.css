@@ -58,7 +58,7 @@ h2 {
     position: fixed;
     top: 5px;
     left: calc(50% - 35px);
-    z-index: 999999;
+    z-index: 99999;
 }
 #logo-small {
     opacity: 0;
@@ -115,6 +115,7 @@ button.selected {
 .nav-link-fixed {
     font-size: 0.9rem !important;
     padding: 40px 35px !important;
+    transition: padding 0.4s;
 }
 .navbar-wrapper {
   position: fixed !important;
@@ -160,6 +161,7 @@ button.selected {
     font-weight: 500;
     letter-spacing: 0.05rem;
     font-size: 0.74rem;
+    transition: padding 0.4s;
 }
 
 .navbar-inverse .navbar-toggle {
