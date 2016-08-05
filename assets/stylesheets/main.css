@@ -62,8 +62,9 @@ h2 {
     transition: transform 0.4s;
 }
 .top-logo-resized {
-    transform: scale(0.8, 0.8);
-    /*left: calc(50% - 30px);*/
+    /*transform: scale(0.8, 0.8);*/
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(0.8, 0.8);
 }
 #logo-small {
     opacity: 0;
