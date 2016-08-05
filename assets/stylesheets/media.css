@@ -91,13 +91,13 @@
         background-color: #262223;
     }*/
     .navbar .navbar-collapse>ul {
-        padding-top: 80px !important;
+        padding-top: 6vh !important;
         height: 100vh !important;
     }
     .navbar-inverse .navbar-nav>li>a {
         font-weight: 500;
         font-size: 1rem;
-        line-height: 35px;
+        line-height: 6vh;
         overflow: visible !important;
     }
     .nav>li.logo-placeholder {
