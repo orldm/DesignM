@@ -611,3 +611,7 @@ span.close-details {
     text-transform: uppercase;
     width: 100%;
 }
+/************************* photoswipe ************************/
+.pswp__top-bar {
+    display: none;
+}
