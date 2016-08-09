@@ -43,9 +43,10 @@ $(document).ready(function() {
         $('.navbar-toggle').trigger('click');
     });
     $('.js-anchor').click(function(e) {
+        var topOffset =  ($(window).width() > 752) ? 48 : 0;
         $('.navbar-toggle').trigger('click');
         $('html, body').animate({
-            scrollTop: $( $(this).attr('href') ).offset().top
+            scrollTop: $( $(this).attr('href') ).offset().top - topOffset
         }, 500);
     });
     $('.navbar-toggle').click(function(e) {
