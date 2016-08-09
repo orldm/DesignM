@@ -204,7 +204,7 @@ $(document).ready(function() {
         });
     });
 
-    $('#js-feedback').click(function() {
+    $('.modal-open').click(function() {
             var bodyInnerWidth = $('body').innerWidth();
             $('.navbar-wrapper').css('width', bodyInnerWidth);
             $('.top-logo').css('left', (bodyInnerWidth/2) - 35);

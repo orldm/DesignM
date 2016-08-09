@@ -540,6 +540,12 @@ span.close-details {
     color: #555555;
 }
 /************************* contact us ************************/
+.contacts-container a {
+    text-decoration: none;
+}
+.contacts-container .container-inner {
+    cursor: pointer;
+}
 .contacts-container {
     background-color: #F6F6F6;
 }
